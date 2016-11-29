@@ -10,14 +10,12 @@
 	<!-- CSS -->
 	<link rel = "stylesheet" href="css/main.css">
 
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 <!-- Google Fonts -->
 <link href='https://fonts.googleapis.com/css?family=Tillana:600,800' rel='stylesheet' type='text/css'>
@@ -37,23 +35,31 @@
 	</div>
 		
 <!-- Search Bar -->				
-<div class="container">
+<div class="container-fluid">
 	<h1 class='title text-center'>Google Books Finder</h1>
 		<div class="row">
-	  		<div class="col-sm-12 text-center">
+	  		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
 	    		<input id = "search" placeholder="Title" onkeydown="return searchKeyPress(event)"/><br><br>
-				<button class="btn btn-success" id="button" onclick="searchButton()">SEARCH</button>
+				<button class="btn btn-success" id="button" onclick="searchBooks()">SEARCH</button>
 			</div>	
 	  </div>
 </div> <!-- end row -->
-	
-<div id="results"></div>
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">	
+			<div id="results"></div>
+		</div>
+	</div>	
+</div>
 
 <!-- Jquery -->
 <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 <!-- Bootstrap JS -->
 <script src="js/bootstrap.js"></script>
 <script type="text/javascript" src="js/main.js"></script> 
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
  
 </body>
 </html>
